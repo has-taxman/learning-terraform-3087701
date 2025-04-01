@@ -58,8 +58,6 @@ module "alb" {
   subnets            = module.blog_vpc.public_subnet
   security_groups    = module.blog_vpc.security_group_id
 
-
-
   target_groups = [
     {
       name_prefix      = "blog-"
